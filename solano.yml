@@ -1,0 +1,24 @@
+# Solano CI intern example
+
+nodejs:
+  version: '0.10.31'
+
+firefox: '31.0esr'
+
+java: java-7-openjdk
+
+hooks:
+  pre_setup: ./solano-pre_setup.sh
+  post_build: ./solano-post_build.sh
+
+cache:
+  key_paths:
+    - package.json
+  save_paths:
+    - node_modules
+
+tests:
+  - type: junit
+    command: ./tests/selftest.solano.sh
+    report_files:
+      - "report.xml"

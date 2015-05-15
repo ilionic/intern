@@ -21,7 +21,9 @@
 		"diff": "1.1.0"
 	},
 	"devDependencies": {
-		"intern": "2.2.2"
+		"intern": "2.2.2",
+		"selenium-standalone": "4.4.0",
+		"chromedriver": "~2.15.0"
 	},
 	"scripts": {
 		"install": "node support/fixdeps.js",
