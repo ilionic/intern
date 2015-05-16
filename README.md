@@ -1,4 +1,4 @@
-# “Just make the Intern do the testing” [![Build Status](https://travis-ci.org/theintern/intern.png?branch=master)](https://travis-ci.org/theintern/intern)
+# “Just make the Intern do the testing” [![](https://ci.solanolabs.com:443/isaac1/intern/badges/branches/solano?badge_token=b9614795c16b1af01159a28edd59d7d8c35c62f3)](https://ci.solanolabs.com:443/isaac1/intern/suites/233242)
 
 Intern is a complete test stack for JavaScript designed to help you write and run consistent, high-quality test
 cases for your JavaScript libraries and applications. It can be used to test *any* JavaScript code. Its functional
