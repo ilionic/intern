@@ -19,7 +19,8 @@ cache:
     - node_modules
 
 tests:
-  - type: junit
-    command: ./tests/selftest.solano.sh
-    report_files:
-      - "report.xml"
+  - ./tests/selftest.solano.sh
+
+collect:
+  repo:
+    - report.xml
