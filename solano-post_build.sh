@@ -1,4 +1,6 @@
 #!/bin/bash
 
 # Kill the selenium process
-kill -9 `cat $TMPDIR/selenium-standalone.pid`
+if [ -f "$TMPDIR/selenium-standalone.pid" ]; then
+  kill -9 `cat $TMPDIR/selenium-standalone.pid`
+fi
