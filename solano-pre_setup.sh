@@ -12,5 +12,5 @@ if [ ! -d node_modules ]; then
 fi
 
 node_modules/selenium-standalone/bin/selenium-standalone install
-nohup node_modules/selenium-standalone/bin/selenium-standalone start > $TMPDIR/selenium-standalone.log 2>&1&
+nohup node_modules/selenium-standalone/bin/selenium-standalone start > selenium-standalone.log 2>&1&
 echo $! > $TMPDIR/selenium-standalone.pid

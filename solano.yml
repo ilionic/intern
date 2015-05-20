@@ -8,6 +8,9 @@ firefox: '31.0esr'
 java: 
   java_version: java-7-openjdk
 
+ruby_version: ruby-2.2.2
+bundler_version: 1.8.4
+
 hooks:
   pre_setup: ./solano-pre_setup.sh
   post_build: ./solano-post_build.sh
@@ -24,3 +27,4 @@ tests:
 collect:
   repo:
     - report.xml
+    - selenium-standalone.log
