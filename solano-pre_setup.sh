@@ -11,6 +11,7 @@ if [ ! -d node_modules ]; then
   cd $TDDIUM_REPO_ROOT
 fi
 
-node_modules/selenium-standalone/bin/selenium-standalone install
-nohup node_modules/selenium-standalone/bin/selenium-standalone start > selenium-standalone.log 2>&1&
-echo $! > $TMPDIR/selenium-standalone.pid
+# Install selenium's chromedriver
+if [ ! -f node_modules/selenium-standalone/.selenium/chromedriver/2.15-x64-chromedriver ]; then
+  node_modules/selenium-standalone/bin/selenium-standalone install
+fi

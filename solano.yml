@@ -13,7 +13,6 @@ bundler_version: 1.8.4
 
 hooks:
   pre_setup: ./solano-pre_setup.sh
-  post_build: ./solano-post_build.sh
 
 cache:
   key_paths:
