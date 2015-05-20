@@ -1,0 +1,29 @@
+# Solano CI intern example
+
+nodejs:
+  version: '0.10.31'
+
+firefox: '31.0esr'
+
+java: 
+  java_version: java-7-openjdk
+
+ruby_version: ruby-2.2.2
+bundler_version: 1.8.4
+
+hooks:
+  pre_setup: ./solano-pre_setup.sh
+
+cache:
+  key_paths:
+    - package.json
+  save_paths:
+    - node_modules
+
+tests:
+  - ./tests/selftest.solano.sh
+
+collect:
+  repo:
+    - report.xml
+    - selenium-standalone.log
