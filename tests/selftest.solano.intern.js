@@ -29,9 +29,9 @@ define({
 		}
 	},
 
-	suites: [
-		'intern-selftest/tests/unit/all'
-	],
+	// suites: [
+	// 	'intern-selftest/tests/unit/all'
+	// ],
 	functionalSuites: [
 		'intern-selftest/tests/functional/lib/ProxiedSession'
 	],
